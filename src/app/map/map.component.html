@@ -1,0 +1,49 @@
+<div class="pt-21">
+<section class="flex flex-row w-full h-[calc(100vh-5rem)] overflow-y-auto">
+    <aside class="border w-1/5 bg-gray-50 h-full p-4">
+        <div class="">
+            Filter Categories :
+            <select name="" id="" class="">
+                <option value="park">Park</option>
+                <option value="museums">Museums</option>
+                <option value="libraries">Libraries</option>
+                <option value="restaurants">Restaurants</option>
+                <option value="tech-hubs">Tech Hubs</option>
+            </select>
+        </div>
+    </aside>
+
+
+    <!-- <div class="border w-4/5 h-full">
+        <input
+  type="text"
+  [(ngModel)]="searchTerm"
+  placeholder="Search location..."
+  (keyup.enter)="searchLocation()" />
+
+    </div> -->
+
+
+
+
+<div class="border w-4/5 h-full">
+    <google-map
+    height="400px"
+    width="100%"
+    [center]="center"
+    [zoom]="zoom"
+  ></google-map>
+
+  <iframe
+  width="600"
+  height="450"
+  style="border:0"
+  loading="lazy"
+  allowfullscreen
+  referrerpolicy="no-referrer-when-downgrade"
+  src="https://www.google.com/maps/embed/v1/place?key=API_KEY
+    &q=Space+Needle,Seattle+WA">
+</iframe>
+  </div>
+</section>
+</div>
