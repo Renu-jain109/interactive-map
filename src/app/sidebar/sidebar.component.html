@@ -1,0 +1,56 @@
+<div class="flex flex-col p-4">
+    <!-- Search Bar -->
+    <div class="flex flex-row items-center gap-2 mb-4">
+        <div class="flex items-center space-x-2 relative flex-1">
+            <ion-icon name="search" class="absolute left-3 text-xl text-gray-500"></ion-icon>
+            <input #searchInput type="text" id="search-input" 
+                placeholder="Search by city, category, or state..."
+                class="border bg-white border-gray-300 rounded-full px-10 py-2 w-full focus:outline-none focus:ring-2 focus:ring-blue-500"
+                [disabled]="!isMapReady" 
+                (keyup.enter)="search.emit(searchInput.value)"
+                (input)="onSearchInput($event)">
+            <ion-icon *ngIf="searchInput.value" name="close" 
+                class="absolute right-4 text-xl text-gray-500 cursor-pointer hover:text-blue-600"
+                (click)="clearSearch(searchInput)"></ion-icon>
+        </div>
+        <button id="search-button" 
+            class="bg-blue-500 text-white px-4 py-2 rounded-full hover:bg-blue-600 transition-colors"
+            [disabled]="!isMapReady" 
+            (click)="search.emit(searchInput.value)">
+            Search
+        </button>
+    </div>
+
+    <!-- Search Results -->
+    <div *ngIf="searchInput.value" class="bg-white rounded-lg shadow-md overflow-hidden">
+        <div class="p-3 bg-gray-50 border-b">
+            <h3 class="font-medium text-gray-700">Search Results</h3>
+        </div>
+        <div class="max-h-96 overflow-y-auto">
+            <div *ngIf="!filteredMarkers || filteredMarkers.length === 0" class="p-4 text-gray-500 text-center">
+                No results found
+            </div>
+            <div *ngFor="let marker of filteredMarkers" 
+                 (click)="displayMarkerDetails(marker)"
+                 class="p-3 border-b hover:bg-gray-50 cursor-pointer">
+                <div class="font-medium text-gray-800">{{marker.city}}</div>
+                <div class="text-sm text-gray-600">{{marker.category}} • {{marker.state}}</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div *ngIf="selectedMarker" class="p-4 bg-gray-100 w-72 h-auto rounded-xl shadow absolute z-2000 mt-4">
+    <div class="w-full flex justify-end">
+        <ion-icon name="close" class="text-2xl cursor-pointer" (click)="selectedMarker = null"></ion-icon>
+    </div>
+    <img [src]="selectedMarker.image" [alt]="selectedMarker.name" class="w-full h-auto rounded mt-2" />
+
+    <h3 class="text-2xl font-bold">{{ selectedMarker.city }}</h3>
+    <h4 class="text-base font-semibold">{{ selectedMarker.hindiName }}</h4>
+    <h4 class="text-base font-semibold">{{ selectedMarker.state }}</h4>
+    <p class="text-sm text-gray-600 pt-2">{{ selectedMarker.info }}</p>
+</div>
+
+<div *ngIf="!selectedMarker" class="p-4 text-gray-500">
+</div>

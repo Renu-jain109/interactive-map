@@ -1,0 +1,2015 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2025-06-06T08:08:04Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/6992669",
+        "amenity": "restaurant",
+        "building": "yes",
+        "name": "Rajesh Restuarant",
+        "type": "multipolygon"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              75.8418117,
+              22.7152915
+            ],
+            [
+              75.8418227,
+              22.7153196
+            ],
+            [
+              75.8418041,
+              22.715508
+            ],
+            [
+              75.8416304,
+              22.7155063
+            ],
+            [
+              75.8416403,
+              22.7152805
+            ],
+            [
+              75.8418117,
+              22.7152915
+            ]
+          ]
+        ]
+      },
+      "id": "relation/6992669"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/320244340",
+        "amenity": "restaurant",
+        "building": "yes",
+        "name": "Jash Garden Restaurant"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              75.9071572,
+              22.7538489
+            ],
+            [
+              75.9072306,
+              22.7547992
+            ],
+            [
+              75.906793,
+              22.7548087
+            ],
+            [
+              75.9067156,
+              22.7538779
+            ],
+            [
+              75.9071572,
+              22.7538489
+            ]
+          ]
+        ]
+      },
+      "id": "way/320244340"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/320370607",
+        "amenity": "restaurant",
+        "name": "Eden Garden"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              75.9009373,
+              22.7700594
+            ],
+            [
+              75.9010919,
+              22.7706072
+            ],
+            [
+              75.9005014,
+              22.7707613
+            ],
+            [
+              75.9001881,
+              22.7709589
+            ],
+            [
+              75.9001664,
+              22.7708075
+            ],
+            [
+              75.9001189,
+              22.7705505
+            ],
+            [
+              75.900111,
+              22.7701899
+            ],
+            [
+              75.900594,
+              22.7700936
+            ],
+            [
+              75.9009373,
+              22.7700594
+            ]
+          ]
+        ]
+      },
+      "id": "way/320370607"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/320370611",
+        "amenity": "restaurant",
+        "building": "yes",
+        "name": "Vrindavan Restaurant"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              75.8861965,
+              22.7615395
+            ],
+            [
+              75.8864588,
+              22.7614794
+            ],
+            [
+              75.8865152,
+              22.7616888
+            ],
+            [
+              75.886253,
+              22.7617488
+            ],
+            [
+              75.8861965,
+              22.7615395
+            ]
+          ]
+        ]
+      },
+      "id": "way/320370611"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/320961388",
+        "amenity": "restaurant",
+        "building": "yes",
+        "name": "Desi Tadka"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              75.911692,
+              22.7488809
+            ],
+            [
+              75.911673,
+              22.74879
+            ],
+            [
+              75.9117822,
+              22.7487706
+            ],
+            [
+              75.9118012,
+              22.7488615
+            ],
+            [
+              75.911692,
+              22.7488809
+            ]
+          ]
+        ]
+      },
+      "id": "way/320961388"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/326065632",
+        "amenity": "restaurant",
+        "building": "yes",
+        "name": "Rangoon Garden"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              75.917746,
+              22.7483711
+            ],
+            [
+              75.9183204,
+              22.748304
+            ],
+            [
+              75.918426,
+              22.7489483
+            ],
+            [
+              75.9179098,
+              22.7490058
+            ],
+            [
+              75.9178498,
+              22.7489704
+            ],
+            [
+              75.917746,
+              22.7483711
+            ]
+          ]
+        ]
+      },
+      "id": "way/326065632"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/370171807",
+        "amenity": "restaurant",
+        "building": "yes",
+        "capacity": "25",
+        "cuisine": "indian",
+        "delivery": "yes",
+        "name": "Hunger Pangzzz",
+        "opening_hours": "11am-midnight",
+        "takeaway": "yes"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              75.9052347,
+              22.7561967
+            ],
+            [
+              75.9052535,
+              22.7562561
+            ],
+            [
+              75.9051516,
+              22.7562697
+            ],
+            [
+              75.9051395,
+              22.7562079
+            ],
+            [
+              75.9052347,
+              22.7561967
+            ]
+          ]
+        ]
+      },
+      "id": "way/370171807"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/494912027",
+        "amenity": "restaurant",
+        "building": "yes",
+        "name": "JAM"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              75.7921879,
+              22.6249671
+            ],
+            [
+              75.7922283,
+              22.6249188
+            ],
+            [
+              75.7923199,
+              22.6249791
+            ],
+            [
+              75.792286,
+              22.6250274
+            ],
+            [
+              75.7921879,
+              22.6249671
+            ]
+          ]
+        ]
+      },
+      "id": "way/494912027"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/494912028",
+        "amenity": "restaurant",
+        "building": "yes",
+        "name": "hul adda"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              75.7924418,
+              22.6248868
+            ],
+            [
+              75.7924953,
+              22.6249284
+            ],
+            [
+              75.7924641,
+              22.6249626
+            ],
+            [
+              75.7924106,
+              22.624921
+            ],
+            [
+              75.7924418,
+              22.6248868
+            ]
+          ]
+        ]
+      },
+      "id": "way/494912028"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/630436627",
+        "amenity": "restaurant",
+        "building": "yes",
+        "name": "Canteen"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              75.9434173,
+              22.8215479
+            ],
+            [
+              75.9435445,
+              22.8215582
+            ],
+            [
+              75.9435332,
+              22.8216272
+            ],
+            [
+              75.9436417,
+              22.8216375
+            ],
+            [
+              75.9436193,
+              22.8217823
+            ],
+            [
+              75.9433948,
+              22.8217548
+            ],
+            [
+              75.9434173,
+              22.8215479
+            ]
+          ]
+        ]
+      },
+      "id": "way/630436627"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/699405729",
+        "amenity": "restaurant",
+        "building": "yes"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              75.9260193,
+              22.7005352
+            ],
+            [
+              75.9260807,
+              22.7005421
+            ],
+            [
+              75.9260774,
+              22.7005664
+            ],
+            [
+              75.9259753,
+              22.7005547
+            ],
+            [
+              75.9259824,
+              22.7005016
+            ],
+            [
+              75.9260232,
+              22.7005063
+            ],
+            [
+              75.9260193,
+              22.7005352
+            ]
+          ]
+        ]
+      },
+      "id": "way/699405729"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/700508242",
+        "amenity": "restaurant",
+        "building": "yes"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              75.8724524,
+              22.687067
+            ],
+            [
+              75.8724118,
+              22.6870421
+            ],
+            [
+              75.8723767,
+              22.6870206
+            ],
+            [
+              75.8725004,
+              22.6868487
+            ],
+            [
+              75.8725355,
+              22.6868702
+            ],
+            [
+              75.8725875,
+              22.686798
+            ],
+            [
+              75.8726281,
+              22.6868228
+            ],
+            [
+              75.8726653,
+              22.6868456
+            ],
+            [
+              75.872614,
+              22.6869169
+            ],
+            [
+              75.8726253,
+              22.6869238
+            ],
+            [
+              75.8725908,
+              22.6869719
+            ],
+            [
+              75.8726136,
+              22.6869858
+            ],
+            [
+              75.8725208,
+              22.6871148
+            ],
+            [
+              75.872498,
+              22.6871008
+            ],
+            [
+              75.8724867,
+              22.6870938
+            ],
+            [
+              75.8724534,
+              22.6871401
+            ],
+            [
+              75.8724162,
+              22.6871173
+            ],
+            [
+              75.8724524,
+              22.687067
+            ]
+          ]
+        ]
+      },
+      "id": "way/700508242"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/701153842",
+        "amenity": "restaurant",
+        "building": "yes",
+        "name": "Veg Bites Cafe & Restaurant"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              75.8349444,
+              22.6958285
+            ],
+            [
+              75.8348636,
+              22.6957412
+            ],
+            [
+              75.834992,
+              22.6956401
+            ],
+            [
+              75.8350727,
+              22.6957274
+            ],
+            [
+              75.8349444,
+              22.6958285
+            ]
+          ]
+        ]
+      },
+      "id": "way/701153842"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/701362277",
+        "amenity": "restaurant",
+        "building": "yes",
+        "name": "Nature's Kitchen Pluck & Dine"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              75.8846437,
+              22.7626143
+            ],
+            [
+              75.8846173,
+              22.7625097
+            ],
+            [
+              75.8848224,
+              22.7624656
+            ],
+            [
+              75.8847994,
+              22.7623748
+            ],
+            [
+              75.8849119,
+              22.7623506
+            ],
+            [
+              75.8849434,
+              22.7624749
+            ],
+            [
+              75.8849613,
+              22.7625459
+            ],
+            [
+              75.8846437,
+              22.7626143
+            ]
+          ]
+        ]
+      },
+      "id": "way/701362277"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/702007062",
+        "amenity": "restaurant",
+        "building": "yes",
+        "name": "Apna Sweets"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              75.8955207,
+              22.7497444
+            ],
+            [
+              75.8954299,
+              22.7494654
+            ],
+            [
+              75.8958785,
+              22.7493411
+            ],
+            [
+              75.8959693,
+              22.7496201
+            ],
+            [
+              75.8955207,
+              22.7497444
+            ]
+          ]
+        ]
+      },
+      "id": "way/702007062"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/703194283",
+        "addr:street": "scheme no 54",
+        "amenity": "restaurant",
+        "building": "yes",
+        "cuisine": "khichdi_saboodana",
+        "diet:vegetarian": "yes",
+        "name": "jay ambe sweets"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              75.885901,
+              22.7569011
+            ],
+            [
+              75.8860214,
+              22.7568715
+            ],
+            [
+              75.8860571,
+              22.7569952
+            ],
+            [
+              75.8859367,
+              22.7570248
+            ],
+            [
+              75.885901,
+              22.7569011
+            ]
+          ]
+        ]
+      },
+      "id": "way/703194283"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/703194293",
+        "amenity": "restaurant",
+        "building": "yes",
+        "name": "DZire paying guest and mess"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              75.8856828,
+              22.7571142
+            ],
+            [
+              75.8856388,
+              22.7569619
+            ],
+            [
+              75.8857603,
+              22.7569321
+            ],
+            [
+              75.8858043,
+              22.7570843
+            ],
+            [
+              75.8856828,
+              22.7571142
+            ]
+          ]
+        ]
+      },
+      "id": "way/703194293"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1172654813",
+        "addr:city": "Indore",
+        "addr:housenumber": "156,Vishnupuri colony",
+        "addr:postcode": "452014",
+        "addr:street": "Old A. B. Road",
+        "amenity": "restaurant",
+        "building": "yes",
+        "diet:vegetarian": "yes",
+        "layer": "1",
+        "name": "Matargasti",
+        "opening_hours": "24/7",
+        "phone": "084549 22434"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              75.8630177,
+              22.6910211
+            ],
+            [
+              75.863023,
+              22.6909423
+            ],
+            [
+              75.8631501,
+              22.6909498
+            ],
+            [
+              75.8631464,
+              22.6910285
+            ],
+            [
+              75.8630177,
+              22.6910211
+            ]
+          ]
+        ]
+      },
+      "id": "way/1172654813"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1172654814",
+        "addr:city": "Indore",
+        "addr:housenumber": "Shop number G-4,29,Shivom Apartment,Vishnupuri main,Vishnupuri Colony",
+        "addr:postcode": "452001",
+        "addr:street": "Old A. B. Road",
+        "amenity": "restaurant",
+        "building": "yes",
+        "cuisine": "burger;pizza;cake;sandwich;dessert",
+        "diet:vegetarian": "yes",
+        "name": "Vairagi Chef \"Cakes and Street Food\"",
+        "opening_hours": "Mo-Su 01:00-11:00 pm"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              75.8633875,
+              22.6898088
+            ],
+            [
+              75.8634768,
+              22.6897205
+            ],
+            [
+              75.8635598,
+              22.6897852
+            ],
+            [
+              75.8634705,
+              22.6898806
+            ],
+            [
+              75.8633875,
+              22.6898088
+            ]
+          ]
+        ]
+      },
+      "id": "way/1172654814"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1172654816",
+        "addr:city": "Indore",
+        "addr:housenumber": "Vishnupuri Colony",
+        "addr:postcode": "452014",
+        "addr:street": "Old A. B. Road",
+        "amenity": "restaurant",
+        "building": "yes",
+        "cuisine": "cake;dessert;donut;pizza",
+        "diet:vegan": "yes",
+        "name": "Royal Bakery Stores",
+        "opening_hours": "24/7"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              75.8636562,
+              22.6900653
+            ],
+            [
+              75.8637093,
+              22.6900135
+            ],
+            [
+              75.8637715,
+              22.6899575
+            ],
+            [
+              75.8638701,
+              22.6900667
+            ],
+            [
+              75.8637578,
+              22.6901633
+            ],
+            [
+              75.8636562,
+              22.6900653
+            ]
+          ]
+        ]
+      },
+      "id": "way/1172654816"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1360679886",
+        "amenity": "restaurant",
+        "building": "yes",
+        "layer": "1",
+        "name": "Karnawat hotel"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              75.8849248,
+              22.7572898
+            ],
+            [
+              75.8848659,
+              22.7571329
+            ],
+            [
+              75.885002,
+              22.7570995
+            ],
+            [
+              75.8850405,
+              22.7572626
+            ],
+            [
+              75.8849248,
+              22.7572898
+            ]
+          ]
+        ]
+      },
+      "id": "way/1360679886"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/748591329",
+        "amenity": "restaurant",
+        "name": "Indigo"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.903384,
+          22.7533416
+        ]
+      },
+      "id": "node/748591329"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1802056895",
+        "amenity": "restaurant",
+        "name": "Jain Mithai Bhandar(JMB)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.8945618,
+          22.727255
+        ]
+      },
+      "id": "node/1802056895"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1802056899",
+        "amenity": "restaurant",
+        "name": "Apna Sweets",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.8920658,
+          22.7257518
+        ]
+      },
+      "id": "node/1802056899"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1802381875",
+        "amenity": "restaurant"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.8843599,
+          22.7244111
+        ]
+      },
+      "id": "node/1802381875"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3267423655",
+        "amenity": "restaurant",
+        "name": "Bhojanalay and Tiffin Centre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.9049511,
+          22.7554685
+        ]
+      },
+      "id": "node/3267423655"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3267657264",
+        "amenity": "restaurant",
+        "name": "MY Kitchen Restaurant"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.9051644,
+          22.7562278
+        ]
+      },
+      "id": "node/3267657264"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3278133922",
+        "amenity": "restaurant",
+        "cuisine": "creamrole_biscuit,chai",
+        "name": "hazi samosa center",
+        "smoking": "separated"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.8593867,
+          22.7190137
+        ]
+      },
+      "id": "node/3278133922"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3290559253",
+        "amenity": "restaurant",
+        "capacity": "30",
+        "cuisine": "indian",
+        "name": "Mr. Singh's Restaurant"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.9013727,
+          22.7536052
+        ]
+      },
+      "id": "node/3290559253"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3348620811",
+        "amenity": "restaurant",
+        "name": "Nafees"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.8883492,
+          22.7257453
+        ]
+      },
+      "id": "node/3348620811"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3360064186",
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "name": "Saifee Restaurant",
+        "opening_hours": "6 am - 12 midnight",
+        "smoking": "no",
+        "takeaway": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.8641447,
+          22.7160939
+        ]
+      },
+      "id": "node/3360064186"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3360068348",
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "name": "Saifee Hotel",
+        "opening_hours": "6 am - 12 midnight"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.8640174,
+          22.7163833
+        ]
+      },
+      "id": "node/3360068348"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4618038489",
+        "addr:street": "Saket Nagar",
+        "amenity": "restaurant",
+        "cuisine": "international",
+        "name": "Mr. Beans",
+        "name:en": "Mr. Beans",
+        "opening_hours": "Mo-Su 10:00-23:30",
+        "phone": "+91 731 428 5050",
+        "website": "http://www.mrbeans.in"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.896927,
+          22.7232375
+        ]
+      },
+      "id": "node/4618038489"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4623146658",
+        "amenity": "restaurant",
+        "cuisine": "grill",
+        "name": "Kebabsville"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.8893939,
+          22.7508667
+        ]
+      },
+      "id": "node/4623146658"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4623146659",
+        "amenity": "restaurant",
+        "cuisine": "international",
+        "name": "Blue Lagoon"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.8889642,
+          22.7509417
+        ]
+      },
+      "id": "node/4623146659"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4623146660",
+        "amenity": "restaurant",
+        "cuisine": "mediterranean",
+        "name": "Mediterra"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.8890973,
+          22.7515742
+        ]
+      },
+      "id": "node/4623146660"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4623160739",
+        "amenity": "restaurant",
+        "cuisine": "chinese",
+        "name": "Chopstick City"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.8893495,
+          22.7512405
+        ]
+      },
+      "id": "node/4623160739"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4623160740",
+        "amenity": "restaurant",
+        "cuisine": "indian",
+        "name": "Sanchi"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.8892539,
+          22.7513794
+        ]
+      },
+      "id": "node/4623160740"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4703147060",
+        "addr:city": "indore",
+        "addr:street": "mahunaka road",
+        "amenity": "restaurant",
+        "name": "babla chicken centre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.844087,
+          22.7048167
+        ]
+      },
+      "id": "node/4703147060"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4721553035",
+        "addr:street": "Kanadiya Road",
+        "amenity": "restaurant",
+        "name": "Prashant Restaurant"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.9014201,
+          22.7206932
+        ]
+      },
+      "id": "node/4721553035"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5049920222",
+        "addr:street": "RNT marg",
+        "amenity": "restaurant",
+        "name": "Sai prasad",
+        "name:en": "Sai prasad"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.8695959,
+          22.7177775
+        ]
+      },
+      "id": "node/5049920222"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5049920223",
+        "addr:street": "RNT marg",
+        "amenity": "restaurant",
+        "name": "Neelkamal restaurant",
+        "name:en": "Neelkamal restaurant"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.8694472,
+          22.7178272
+        ]
+      },
+      "id": "node/5049920223"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5049920422",
+        "addr:street": "RNT marg",
+        "amenity": "restaurant",
+        "name": "Neelkanth restaurant",
+        "name:en": "Neelkanth restaurant"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.8698126,
+          22.7177657
+        ]
+      },
+      "id": "node/5049920422"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5736887805",
+        "addr:street": "Maharaja Yeshwantrao Hospital Road",
+        "amenity": "restaurant",
+        "name": "Man bhavan"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.8745701,
+          22.7137187
+        ]
+      },
+      "id": "node/5736887805"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5736896122",
+        "addr:street": "Chhavni Road",
+        "amenity": "restaurant",
+        "name": "Kabeer roasted chicken"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.8745714,
+          22.7138033
+        ]
+      },
+      "id": "node/5736896122"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5951153021",
+        "amenity": "restaurant",
+        "cuisine": "indian",
+        "microbrewery": "yes",
+        "name": "Krishna Restaurant",
+        "operator": "indian",
+        "takeaway": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.9274068,
+          22.8183481
+        ]
+      },
+      "id": "node/5951153021"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6237634478",
+        "amenity": "restaurant",
+        "cuisine": "coffee_shop",
+        "name": "Pitchers Cafebar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.8920419,
+          22.7443446
+        ]
+      },
+      "id": "node/6237634478"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7097845232",
+        "addr:city": "Indore",
+        "addr:housenumber": "Vishal Trinity",
+        "addr:street": "Sapna Sangeeta Rd",
+        "amenity": "restaurant",
+        "brand": "Pizza Hut",
+        "brand:wikidata": "Q191615",
+        "brand:wikipedia": "en:Pizza Hut",
+        "cuisine": "pizza",
+        "name": "Pizza Hut"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.8680274,
+          22.7004322
+        ]
+      },
+      "id": "node/7097845232"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7097880786",
+        "addr:city": "Indore",
+        "addr:housenumber": "Rafael Tower",
+        "addr:street": "Near Saket Square",
+        "amenity": "restaurant",
+        "brand": "Pizza Hut",
+        "brand:wikidata": "Q191615",
+        "brand:wikipedia": "en:Pizza Hut",
+        "cuisine": "pizza",
+        "name": "Pizza Hut"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.8943212,
+          22.7252554
+        ]
+      },
+      "id": "node/7097880786"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7097887719",
+        "addr:city": "Indore",
+        "addr:housenumber": "Dhan Trident",
+        "addr:street": "Vijay Nagar",
+        "amenity": "restaurant",
+        "brand": "Pizza Hut",
+        "brand:wikidata": "Q191615",
+        "brand:wikipedia": "en:Pizza Hut",
+        "cuisine": "pizza",
+        "name": "Pizza Hut"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.897717,
+          22.7538662
+        ]
+      },
+      "id": "node/7097887719"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7097898985",
+        "addr:city": "Indore",
+        "addr:housenumber": "Malhar Mega Mall",
+        "addr:street": "AB Rd, Vijay Nagar",
+        "amenity": "restaurant",
+        "brand": "Pizza Hut",
+        "brand:wikidata": "Q191615",
+        "brand:wikipedia": "en:Pizza Hut",
+        "cuisine": "pizza",
+        "name": "Pizza Hut"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.8947744,
+          22.7447525
+        ]
+      },
+      "id": "node/7097898985"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8906592758",
+        "amenity": "restaurant",
+        "name": "Ambika sweets"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.9046882,
+          22.7200542
+        ]
+      },
+      "id": "node/8906592758"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8906592765",
+        "amenity": "restaurant",
+        "name": "Jainam food"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.9004597,
+          22.7207019
+        ]
+      },
+      "id": "node/8906592765"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8906592768",
+        "amenity": "restaurant",
+        "name": "Sharma Sweets"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.8985534,
+          22.721221
+        ]
+      },
+      "id": "node/8906592768"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8909386822",
+        "amenity": "restaurant",
+        "name": "ATKT cafe"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.9055138,
+          22.7180111
+        ]
+      },
+      "id": "node/8909386822"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9458213777",
+        "amenity": "restaurant",
+        "cuisine": "indian",
+        "name": "Lord of Grill"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.8838454,
+          22.6636278
+        ]
+      },
+      "id": "node/9458213777"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9458213778",
+        "amenity": "restaurant",
+        "cuisine": "indian",
+        "name": "Apna Punjabi Dhaba"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.8834208,
+          22.6634724
+        ]
+      },
+      "id": "node/9458213778"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9458213779",
+        "amenity": "restaurant",
+        "cuisine": "indian",
+        "name": "Maratha Darbar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.8846445,
+          22.6582329
+        ]
+      },
+      "id": "node/9458213779"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9465937277",
+        "amenity": "restaurant",
+        "cuisine": "indian",
+        "name": "Maayra Ka Dhaaba"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.8777271,
+          22.6781986
+        ]
+      },
+      "id": "node/9465937277"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9465937278",
+        "amenity": "restaurant",
+        "cuisine": "indian",
+        "name": "Ramesh South Indian"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.8782914,
+          22.6765013
+        ]
+      },
+      "id": "node/9465937278"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9465937290",
+        "amenity": "restaurant",
+        "name": "Panna Restaurant & Sweets"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.880289,
+          22.6729012
+        ]
+      },
+      "id": "node/9465937290"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9465992275",
+        "amenity": "restaurant",
+        "cuisine": "indian",
+        "name": "D. K. Restaurant"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.8759284,
+          22.6727602
+        ]
+      },
+      "id": "node/9465992275"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9465992280",
+        "amenity": "restaurant",
+        "cuisine": "indian",
+        "name": "Kushwah Ji Tiffin Center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.8754909,
+          22.6724461
+        ]
+      },
+      "id": "node/9465992280"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9515553157",
+        "air_conditioning": "no",
+        "amenity": "restaurant",
+        "brewery": "no",
+        "cuisine": "indian",
+        "name": "Kesarlal"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.881027,
+          22.6702374
+        ]
+      },
+      "id": "node/9515553157"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9515931009",
+        "amenity": "restaurant",
+        "name": "Apna Sweets"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.8669063,
+          22.6995369
+        ]
+      },
+      "id": "node/9515931009"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9515931021",
+        "amenity": "restaurant",
+        "cuisine": "indian",
+        "name": "Pishori Dhaba"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.8641434,
+          22.6987248
+        ]
+      },
+      "id": "node/9515931021"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9544567790",
+        "amenity": "restaurant",
+        "name": "Gurjar Restaurant"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.8769241,
+          22.6729545
+        ]
+      },
+      "id": "node/9544567790"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9544567791",
+        "amenity": "restaurant",
+        "name": "Taste N Best"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.8766558,
+          22.6729273
+        ]
+      },
+      "id": "node/9544567791"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9544998919",
+        "amenity": "restaurant",
+        "name": "Sapna Restaurant"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.8772349,
+          22.6789702
+        ]
+      },
+      "id": "node/9544998919"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9768715774",
+        "addr:city": "Indore",
+        "addr:housenumber": "257, PU4",
+        "addr:postcode": "452001",
+        "addr:street": "Scheme - 54",
+        "amenity": "restaurant",
+        "cuisine": "chinese;fast_food;southern;indian",
+        "diet:vegetarian": "yes",
+        "name": "Wayfare",
+        "opening_hours": "Mo-Su 11:00-23:00",
+        "phone": "+91 93997 70600",
+        "website": "https://wayfare.thenationtrip.com"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.8956163,
+          22.7461157
+        ]
+      },
+      "id": "node/9768715774"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10239634876",
+        "amenity": "restaurant",
+        "cuisine": "pizza"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.8815681,
+          22.6689821
+        ]
+      },
+      "id": "node/10239634876"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10239634878",
+        "amenity": "restaurant",
+        "cuisine": "indian",
+        "name": "Satkar Pure Veg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.8803559,
+          22.6725136
+        ]
+      },
+      "id": "node/10239634878"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10300570118",
+        "addr:city": "Indore",
+        "addr:housenumber": "LG12 One Centre",
+        "addr:postcode": "452001",
+        "addr:street": "Chappan Dukkan",
+        "air_conditioning": "yes",
+        "amenity": "restaurant",
+        "cuisine": "indian",
+        "diet:vegetarian": "yes",
+        "internet_access": "yes",
+        "name": "Kitchen Sensation",
+        "opening_hours": "Mo-Su 11:30-23:30",
+        "payment:cash": "yes",
+        "payment:gpay": "yes",
+        "payment:online": "yes",
+        "payment:paytm": "yes",
+        "payment:upi": "yes",
+        "phone": "+919039046282"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.8847302,
+          22.7244192
+        ]
+      },
+      "id": "node/10300570118"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10895503066",
+        "addr:city": "Indore",
+        "addr:housenumber": "Vishnupuri Colony",
+        "addr:postcode": "452014",
+        "addr:street": "Old A. B. Road",
+        "amenity": "restaurant",
+        "diet:vegetarian": "yes",
+        "name": "Just Paratha",
+        "opening_hours": "24/7"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.8642944,
+          22.6901939
+        ]
+      },
+      "id": "node/10895503066"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10895503070",
+        "addr:city": "Indore",
+        "addr:housenumber": "Vishnupuri Colony",
+        "addr:postcode": "452014",
+        "addr:street": "Old A. B. Road",
+        "amenity": "restaurant",
+        "name": "Radha sanchi parler",
+        "opening_hours": "Mo-Su 09:00-21:00"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.8635677,
+          22.6900442
+        ]
+      },
+      "id": "node/10895503070"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11683855029",
+        "amenity": "restaurant",
+        "name": "Primus Lounge",
+        "opening_hours": "24/7"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.8049536,
+          22.7277475
+        ]
+      },
+      "id": "node/11683855029"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11690375145",
+        "amenity": "restaurant",
+        "name": "Annapurna Restaurent"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.8072339,
+          22.6564519
+        ]
+      },
+      "id": "node/11690375145"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12596146058",
+        "amenity": "restaurant",
+        "name": "vijayshree sandwhcih"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.8868026,
+          22.7568097
+        ]
+      },
+      "id": "node/12596146058"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12596209112",
+        "amenity": "restaurant",
+        "name": "ridhi sidhi"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.8874708,
+          22.7566714
+        ]
+      },
+      "id": "node/12596209112"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12597676549",
+        "amenity": "restaurant",
+        "name": "Pind balluchi"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.8941344,
+          22.7559532
+        ]
+      },
+      "id": "node/12597676549"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12864364419",
+        "addr:city": "Indore",
+        "addr:district": "Indore",
+        "addr:postcode": "452020",
+        "addr:street": "Indore Bypass Rd, near Flyover Tejaji Nagar, Tejaji Nagar, Mirjapur",
+        "amenity": "restaurant",
+        "capacity": "250",
+        "contact:facebook": "https://www.facebook.com/satkarpurevegindore",
+        "cuisine": "indian;north_indian;punjabi",
+        "diet:vegetarian": "yes",
+        "email": "satkarpurevegindore@gmail.com",
+        "name": "Satkar Pure Veg Punjabi Dhaba",
+        "opening_hours": "Mo-Su 11:00-23:00",
+        "outdoor_seating": "yes",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "payment:gpay": "yes",
+        "payment:upi": "yes",
+        "phone": "+919479313713",
+        "takeaway": "yes",
+        "toilets": "yes",
+        "website": "https://satkarpureveg.in"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.8941297,
+          22.6412741
+        ]
+      },
+      "id": "node/12864364419"
+    }
+  ]
+}
