@@ -3,7 +3,7 @@ import { provideRouter } from '@angular/router';
 import { provideIonicAngular } from '@ionic/angular/standalone';
 
 import { routes } from './app.routes';
-import { HttpClientModule } from '@angular/common/http';
+import { provideHttpClient } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 
 export const appConfig: ApplicationConfig = {
@@ -11,6 +11,7 @@ export const appConfig: ApplicationConfig = {
     provideZoneChangeDetection({ eventCoalescing: true }), 
     provideRouter(routes),
     provideIonicAngular(),
-    importProvidersFrom(HttpClientModule, FormsModule)
+    importProvidersFrom(FormsModule),
+    provideHttpClient(),
   ]
 };

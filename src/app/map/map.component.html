@@ -1,104 +1,92 @@
+<!-- Main Map Layout -->
 <div class="relative h-screen w-full bg-gray-100">
-  <!-- Search Loading Indicator -->
-  <div *ngIf="isSearching" class="search-loading">
-    <span>Searching...</span>
+  <!-- Top Controls: City Select, Category Filter, My Location -->
+  <div class="absolute top-4 right-4 z-[1000] flex items-center space-x-4 flex-col md:flex-row gap-2">
+    <!-- City Dropdown -->
+    <app-select-city [selectedCity]="currentCity" (cityChange)="handleCitySelected($event)">
+    </app-select-city>
+
+    <!-- Category Filter -->
+    <app-filter-category [selectedCategories]="selectedCategories"
+      [markers]="markers" (categoryChange)="handleCategorySelected($event)" (fitToMarkers)="onFitToMarkers($event)">
+    </app-filter-category>
+
+<!-- [map]="map" -->
+    <!-- [markerRefs]="markerRefs"  -->
+
+
+    <!-- My Location Button -->
+    <ng-container *ngIf="map">
+      <app-my-location [map]="map" (locationFound)="onLocationFound($event)" (locationError)="onLocationError($event)"
+        (locationCleared)="onLocationCleared()">
+      </app-my-location>
+    </ng-container>
   </div>
 
-  <!-- Top Controls -->
-  <div class="absolute top-4 right-4 z-[1000] flex items-center space-x-4">
-    <!-- Category Filter Button -->
-    <div class="relative">
-      <button 
-        (click)="toggleCategoryFilter()"
-        class="flex items-center space-x-2 px-4 py-2 bg-white text-gray-700 rounded-lg shadow-md hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-500 border border-gray-200"
-      >
-        <span>Filter by Category</span>
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-500" viewBox="0 0 20 20" fill="currentColor">
-          <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd" />
-        </svg>
-      </button>
-
-      <!-- Category Filter Dropdown -->
-      <div *ngIf="showCategoryFilter" 
-           (mouseleave)="onCategoryFilterMouseLeave()"
-           class="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-xl overflow-hidden z-20 border border-gray-200">
-        <div class="p-2 bg-gray-50 border-b border-gray-200">
-          <div class="flex justify-between items-center">
-            <h3 class="text-sm font-medium text-gray-700">Filter by Category</h3>
-            <button 
-              (click)="clearFilters()" 
-              class="text-xs text-blue-600 hover:text-blue-800"
-            >
-              Clear all
-            </button>
-          </div>
-        </div>
-        <div class="max-h-60 overflow-y-auto">
-          <div *ngFor="let category of categories" 
-               class="flex items-center px-4 py-2 hover:bg-gray-50 cursor-pointer"
-               (click)="toggleCategory(category)">
-            <input type="checkbox" 
-                  [checked]="isCategorySelected(category)"
-                  class="h-4 w-4 text-blue-600 rounded border-gray-300 focus:ring-blue-500"
-                  (click)="$event.stopPropagation()">
-            <span class="ml-3 text-sm text-gray-700">{{ category }}</span>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Geolocation Button -->
-    <button 
-      (click)="locateUser()"
-      class="p-2 bg-white rounded-full shadow-md hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-500"
-      title="Find my location"
-    >
-      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-      </svg>
-    </button>
-  </div>
-
-  <!-- City Selector -->
-  <div class="absolute top-4 right-70 z-[1000] bg-white p-2 hover:bg-gray-50 rounded-lg shadow-md w-64">
-    <select 
-      id="city-select"
-      [(ngModel)]="selectedCity"
-      (ngModelChange)="onCityChange($event)"
-      class="block w-full rounded-md border-gray-300 py-2 pl-3 pr-10 text-base focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500 sm:text-sm"
-    >
-      <option [ngValue]="null" disabled selected class="text-gray-400">Select a city</option>
-      <option *ngFor="let city of cities" [ngValue]="city" class="capitalize">
-        {{ city }}
-      </option>
-    </select>
-  </div>
-
-  <!-- Sidebar -->
-  <div class="absolute left-0 top-0 bottom-0 z-[900] h-full overflow-y-auto bg-white shadow-lg w-96">
+  <!-- Desktop Sidebar (always visible on md and up) -->
+  <div class="hidden md:block fixed left-0 top-0 bottom-0 z-[900] h-full overflow-y-auto bg-white shadow-lg w-72">
+    <!-- Main Sidebar Component -->
     <app-sidebar 
-      [markers]="filteredMarkers.length > 0 ? filteredMarkers : markers" 
+      #sidebar 
+      [map]="map"
+      [markers]="markers"
       [selectedMarker]="selectedMarker" 
       [isMapReady]="isMapReady"
-      (search)="searchLocation($event)"
-      (markerSelect)="onMarkerSelect($event)"
-      class="h-full">
+      [markerRefs]="markerRefs"
+      [highlightMarker]="highlightMarker"
+      [isCategoryFilterActive]="isCategoryFilterActive"
+      (markerSelect)="handleMarkerSelect($event)" 
+      (search)="onSearchFromSidebar($event)"
+      (cityReset)="currentCity = null"
+    >
     </app-sidebar>
   </div>
 
-  <!-- Click outside to close category filter -->
-  <div *ngIf="showCategoryFilter" 
-       class="fixed inset-0 z-[900]" 
-       (click)="showCategoryFilter = false">
-  </div>
 
-  <!-- Map Container -->
-  <div id="map" class="absolute inset-0 w-full h-full z-0">
-    <!-- Loading indicator -->
-    <div *ngIf="!isMapReady" class="absolute inset-0 flex items-center justify-center bg-white bg-opacity-75 z-10">
-      <div class="text-xl font-semibold text-gray-700">Loading map...</div>
+
+  <!-- Sidebar Toggle Button (Mobile only) -->
+  <button (click)="toggleSidebar()" 
+    class="fixed top-8 transform -translate-y-1/2 z-[1000] bg-white p-3 rounded-r-lg shadow-lg hover:bg-gray-50 transition-all duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-blue-500 md:hidden"
+    [class.left-0]="!isSidebarOpen"
+    [class.left-72]="isSidebarOpen">
+    <span class="sr-only">{{ isSidebarOpen ? 'Collapse' : 'Expand' }} sidebar</span>
+    <svg *ngIf="!isSidebarOpen" class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+    </svg>
+    <svg *ngIf="isSidebarOpen" class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+    </svg>
+  </button>
+
+  <!-- Mobile Sidebar (shown/hidden based on isSidebarOpen) -->
+  <div *ngIf="isSidebarOpen" class="md:hidden fixed inset-0 z-[1000]">
+    <div class="absolute inset-0" (click)="toggleSidebar()"></div>
+    <div class="absolute left-0 top-0 bottom-0 w-72 bg-white shadow-lg transform transition-transform">
+      <!-- Main Sidebar Component (Mobile) -->
+      <app-sidebar
+        [map]="map"
+        [markers]="markers" 
+        [selectedMarker]="selectedMarker"
+        [isMapReady]="isMapReady"
+        [markerRefs]="markerRefs" 
+        [highlightMarker]="highlightMarker"
+        [isCategoryFilterActive]="isCategoryFilterActive"
+        (markerSelect)="handleMarkerSelect($event)" 
+        (search)="onSearchFromSidebar($event)"
+        (cityReset)="currentCity = null"
+      >
+      </app-sidebar>
     </div>
   </div>
-</div>
 
+
+  <!-- Map Container -->
+  <div id="map" #mapContainer class="absolute inset-0 w-full h-full z-0 mr-72">
+    <!-- Loading indicator -->
+    <ng-container *ngIf="!isMapReady">
+      <div class="absolute inset-0 flex items-center justify-center bg-white/75 z-10">
+        <div class="text-xl font-semibold text-gray-700">Loading map...</div>
+      </div>
+    </ng-container>
+  </div>
+</div>

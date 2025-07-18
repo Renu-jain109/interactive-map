@@ -1,0 +1,54 @@
+<!-- ======================= Category Filter Main Wrapper ======================= -->
+<div class="relative">
+
+  <!-- ======================= Category Filter Button ======================= -->
+  <div class="relative">
+    <button (click)="toggleCategoryFilter()"
+      class="flex items-center w-48 space-x-2 px-4 py-2 bg-white text-gray-700 rounded-lg shadow-md hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-500 border border-gray-200">
+      <span>Filter by Category</span>
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-500" viewBox="0 0 20 20" fill="currentColor">
+        <path fill-rule="evenodd"
+          d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+          clip-rule="evenodd" />
+      </svg>
+    </button>
+
+    <!-- ======================= Category Dropdown ======================= -->
+    <div class="category-dropdown" *ngIf="isCategoryOpen" (mousedown)="$event.stopPropagation()"
+      (mouseleave)="onCategoryFilterMouseLeave()">
+
+      <!-- ======================= Search Box ======================= -->
+      <div class="search-container">
+        <input type="text" placeholder="Search categories..." class="search-input" [(ngModel)]="searchQuery"
+          (input)="filterCategories()">
+        <i class="fas fa-search search-icon"></i>
+      </div>
+
+      <!-- ======================= Selected Categories ======================= -->
+      <div class="selected-categories" *ngIf="selectedCategories.length > 0">
+        <div class="selected-category" *ngFor="let category of selectedCategories">
+          {{ category }}
+          <button class="remove-category" (click)="removeCategory($event, category)">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        <button class="clear-filters" (click)="clearFilters($event)">
+          Clear All
+        </button>
+      </div>
+
+      <!-- ======================= Category List ======================= -->
+      <div class="category-list">
+        <div class="category-item" *ngFor="let category of filteredCategories"
+          [class.selected]="isCategorySelected(category)" (click)="toggleCategory(category)">
+          <input type="checkbox" [checked]="isCategorySelected(category)" (click)="$event.stopPropagation()"
+            (change)="toggleCategory(category)">
+          <span class="category-name">{{ category }}</span>
+        </div>
+        <div class="no-results" *ngIf="filteredCategories.length === 0">
+          No categories found
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

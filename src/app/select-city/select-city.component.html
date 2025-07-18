@@ -1,0 +1,15 @@
+<!-- ======================= Main: City Select Dropdown ======================= -->
+<div class="relative bg-white p-2 shadow-md rounded-md ">
+  <select 
+    id="city-select"
+    [(ngModel)]="selectedCity"
+    (ngModelChange)="handleCitySelected(selectedCity)"
+    class="block rounded-md border-gray-300 py-2 pl-2 pr-20 text-sm focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500"
+  >
+
+    <option [ngValue]="null" disabled selected class="text-gray-400">Select a city</option>
+    <option *ngFor="let city of cities" [value]="city" class="capitalize">
+      {{ city | titlecase }}
+    </option>
+  </select>
+</div>

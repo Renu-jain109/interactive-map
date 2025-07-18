@@ -1,28 +1,20 @@
-<div class="flex flex-col p-4">
+<!-- ======================= Main: Sidebar Component ======================= -->
+<div class="flex flex-col p-4 h-full overflow-y-auto">
     <!-- Search Bar -->
     <div class="flex flex-row items-center gap-2 mb-4">
         <div class="flex items-center space-x-2 relative flex-1">
             <ion-icon name="search" class="absolute left-3 text-xl text-gray-500"></ion-icon>
-            <input #searchInput type="text" id="search-input" 
-                placeholder="Search by city, category, or state..."
+            <input #searchInput type="text" id="search-input" placeholder="Search by city, category, or state..."
                 class="border bg-white border-gray-300 rounded-full px-10 py-2 w-full focus:outline-none focus:ring-2 focus:ring-blue-500"
-                [disabled]="!isMapReady" 
-                (keyup.enter)="search.emit(searchInput.value)"
-                (input)="onSearchInput($event)">
-            <ion-icon *ngIf="searchInput.value" name="close" 
+                [disabled]="!isMapReady" (keyup.enter)="onSearchEnter($event)" (input)="onSearchInput($event)">
+            <ion-icon *ngIf="searchInput.value" name="close"
                 class="absolute right-4 text-xl text-gray-500 cursor-pointer hover:text-blue-600"
                 (click)="clearSearch(searchInput)"></ion-icon>
         </div>
-        <button id="search-button" 
-            class="bg-blue-500 text-white px-4 py-2 rounded-full hover:bg-blue-600 transition-colors"
-            [disabled]="!isMapReady" 
-            (click)="search.emit(searchInput.value)">
-            Search
-        </button>
     </div>
 
     <!-- Search Results -->
-    <div *ngIf="searchInput.value" class="bg-white rounded-lg shadow-md overflow-hidden">
+    <div *ngIf="searchInput.value && filteredMarkers.length > 0" class="bg-white rounded-lg shadow-md overflow-hidden">
         <div class="p-3 bg-gray-50 border-b">
             <h3 class="font-medium text-gray-700">Search Results</h3>
         </div>
@@ -30,27 +22,46 @@
             <div *ngIf="!filteredMarkers || filteredMarkers.length === 0" class="p-4 text-gray-500 text-center">
                 No results found
             </div>
-            <div *ngFor="let marker of filteredMarkers" 
-                 (click)="displayMarkerDetails(marker)"
-                 class="p-3 border-b hover:bg-gray-50 cursor-pointer">
+            <div *ngFor="let marker of filteredMarkers" (click)="onMarkerSelect(marker)"
+                [class.selected-marker]="selectedMarker === marker"
+                [class.bg-blue-50]="selectedMarker === marker"
+                class="p-3 border-b hover:bg-gray-50 cursor-pointer transition-colors duration-200">
                 <div class="font-medium text-gray-800">{{marker.city}}</div>
                 <div class="text-sm text-gray-600">{{marker.category}} • {{marker.state}}</div>
             </div>
         </div>
     </div>
-</div>
 
-<div *ngIf="selectedMarker" class="p-4 bg-gray-100 w-72 h-auto rounded-xl shadow absolute z-2000 mt-4">
-    <div class="w-full flex justify-end">
-        <ion-icon name="close" class="text-2xl cursor-pointer" (click)="selectedMarker = null"></ion-icon>
+    <!-- Selected Marker Details -->
+    <div *ngIf="selectedMarker" class="mt-4 bg-white rounded-lg shadow-md overflow-hidden">
+        <div class="p-4">
+            <div class="flex justify-between items-start">
+                <div>
+                    <h3 class="text-xl font-bold text-gray-800">{{ selectedMarker.city }}</h3>
+                    <h4 *ngIf="selectedMarker.hindiName" class="text-base font-medium text-gray-600">{{
+                        selectedMarker.hindiName }}</h4>
+                    <h4 *ngIf="selectedMarker.state" class="text-sm text-gray-500">{{ selectedMarker.state }}</h4>
+                </div>
+                <button (click)="selectedMarker = null" class="text-gray-400 hover:text-gray-600">
+                    <ion-icon name="close" class="text-2xl"></ion-icon>
+                </button>
+            </div>
+
+            <div *ngIf="selectedMarker.image" class="mt-3 rounded-lg overflow-hidden">
+                <img [src]="selectedMarker.image" [alt]="selectedMarker.city" class="w-full h-40 object-cover" />
+            </div>
+
+            <div *ngIf="selectedMarker.info" class="mt-3 text-sm text-gray-600">
+                {{ selectedMarker.info }}
+            </div>
+
+            <div *ngIf="selectedMarker.category" class="mt-3">
+                <span class="inline-block bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full">
+                    {{ selectedMarker.category }}
+                </span>
+            </div>
+        </div>
     </div>
-    <img [src]="selectedMarker.image" [alt]="selectedMarker.name" class="w-full h-auto rounded mt-2" />
-
-    <h3 class="text-2xl font-bold">{{ selectedMarker.city }}</h3>
-    <h4 class="text-base font-semibold">{{ selectedMarker.hindiName }}</h4>
-    <h4 class="text-base font-semibold">{{ selectedMarker.state }}</h4>
-    <p class="text-sm text-gray-600 pt-2">{{ selectedMarker.info }}</p>
-</div>
-
-<div *ngIf="!selectedMarker" class="p-4 text-gray-500">
+    <div *ngIf="!selectedMarker" class="p-4 text-gray-500">
+    </div>
 </div>

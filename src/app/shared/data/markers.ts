@@ -1,3 +1,10 @@
+// =======================
+// City Marker Data
+// =======================
+// This file exports an array of marker objects, each representing a major Indian city.
+// Each marker contains city name, coordinates, state, category, info, and image path.
+// Used for displaying city markers and info on the interactive map.
+
 export const markers = [
     {
         lat: 23.0225,
@@ -27,7 +34,7 @@ export const markers = [
         state: 'Madhya Pradesh',
         category: 'Nature & Heritage',
         info: 'Bhopal, the capital of Madhya Pradesh, is known as the "City of Lakes" for its scenic water bodies. The city offers a mix of natural beauty, history, and culture, with attractions like Upper Lake, Van Vihar National Park, and the ancient Sanchi Stupa. It\'s home to Taj-ul-Masajid, one of Asia\'s largest mosques, and the cultural center Bharat Bhavan. The city\'s unique heritage includes the rule of Begums and rich tribal culture.',
-        image: '/assets/bhopal.jpg'
+        image: '/assets/bhopal.jpeg'
     },
     {
         lat: 30.7333,
@@ -177,7 +184,7 @@ export const markers = [
         state: 'Maharashtra',
         category: 'Education',
         info: 'Pune, often called the "Oxford of the East", is renowned for its educational institutions, pleasant climate, and cultural heritage.',
-        image: '/assets/pune.jpeg'
+        image: '/assets/pune.jpg'
     },
     {
         lat: 19.2183,

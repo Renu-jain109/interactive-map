@@ -1,6 +1,6 @@
 import { TestBed } from '@angular/core/testing';
 
-import { GeojsonLoaderService } from './geojson-loader.service';
+import { GeojsonLoaderService } from '../services/geojson-loader.service';
 
 describe('GeojsonLoaderService', () => {
   let service: GeojsonLoaderService;
