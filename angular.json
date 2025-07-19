@@ -31,11 +31,12 @@
               "src/styles.css"
             ],
             "scripts": [
-               "node_modules/leaflet/dist/leaflet.js"
+              "node_modules/leaflet/dist/leaflet.js"
             ]
           },
           "configurations": {
             "production": {
+              "outputPath": "dist/interactive-map",
               "budgets": [
                 {
                   "type": "initial",
